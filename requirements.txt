@@ -1,0 +1,8 @@
+ollama
+diffusers
+torch
+transformers
+accelerate
+fpdf
+protobuf
+sentencepiece
