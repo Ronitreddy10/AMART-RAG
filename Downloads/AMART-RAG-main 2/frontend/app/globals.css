@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0208;
+  --foreground: #00ff41; /* Neon Green */
+  --primary: #00ff41;
+  --secondary: #008f11;
+  --accent: #ff003c; /* Red */
+  --muted: #1e1e1e;
+  --terminal-bg: #000000;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Custom Scrollbar for Terminal feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+.terminal-text {
+  text-shadow: 0 0 5px var(--primary);
+}
+
+.scanline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(0, 255, 65, 0.1);
+  animation: scanline 6s linear infinite;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes scanline {
+  0% { top: -5px; }
+  100% { top: 100%; }
+}

@@ -1,0 +1,15 @@
+ollama
+diffusers
+torch
+transformers
+accelerate
+fpdf
+protobuf
+sentencepiece
+fastapi
+uvicorn
+python-multipart
+streamlit
+streamlit-lottie
+requests
+mflux
