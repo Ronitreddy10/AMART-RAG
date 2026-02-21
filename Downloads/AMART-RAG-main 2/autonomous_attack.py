@@ -5,6 +5,9 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import uvicorn
 from groq import Groq
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Initialize Groq client with the provided API key
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "your-api-key-here")
